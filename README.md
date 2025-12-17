@@ -1,4 +1,4 @@
-# HairSphere 
+# HairSphere 🍑
 
 HairSphere is a comprehensive, peach-themed hair growth and maintenance application designed to help users track their hair health journey. It features routine planning, progress tracking, educational resources, and an AI-powered hair consultant.
 
