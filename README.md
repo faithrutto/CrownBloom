@@ -1,4 +1,4 @@
-# HairSphere 
+# HairSphere 🍑
 
 HairSphere is a comprehensive, peach-themed hair growth and maintenance application designed to help users track their hair health journey. It features routine planning, progress tracking, educational resources, and an AI-powered hair consultant.
 
@@ -17,15 +17,26 @@ HairSphere is a comprehensive, peach-themed hair growth and maintenance applicat
 - **Icons**: Lucide React
 - **Charts**: Recharts
 - **AI**: Google Gemini API (@google/genai)
+- **Build**: Vite
 
 ## 🚀 Getting Started
 
-1. Clone the repository.
-2. If running in a standard Node environment, install dependencies.
-3. Set up your API Key:
-   - Ensure you have a valid Google Gemini API Key.
-   - Set it as an environment variable `API_KEY` or configure it in your build process.
-4. Run the application.
+1. **Clone the repository.**
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Set up your API Key**:
+   - Create a file named `.env` in the root directory (you can copy `.env.example`).
+   - Add your key:
+     ```env
+     API_KEY=AIzaSy...
+     ```
+   - *Note: You can get a key from [Google AI Studio](https://aistudio.google.com/app/apikey).*
+4. **Run the application**:
+   ```bash
+   npm run dev
+   ```
 
 ## 📝 License
 
