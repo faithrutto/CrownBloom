@@ -7,19 +7,22 @@ import {
   Sparkles, 
   Menu, 
   X,
-  User
+  User,
+  Package
 } from 'lucide-react';
 import { Dashboard } from './components/Dashboard';
 import { RoutinePlanner } from './components/RoutinePlanner';
 import { KnowledgeHub } from './components/KnowledgeHub';
 import { ProgressTracker } from './components/ProgressTracker';
 import { AIAdvisor } from './components/AIAdvisor';
+import { InventoryManager } from './components/InventoryManager';
 
 // Navigation Items
 const NAV_ITEMS = [
   { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { id: 'routine', label: 'Routine Planner', icon: CalendarDays },
   { id: 'progress', label: 'Progress Tracking', icon: LineChart },
+  { id: 'inventory', label: 'Product Stash', icon: Package },
   { id: 'knowledge', label: 'Knowledge Hub', icon: BookOpen },
   { id: 'ai-advisor', label: 'AI Diagnostic', icon: Sparkles },
 ];
@@ -33,6 +36,7 @@ export default function App() {
       case 'dashboard': return <Dashboard onNavigate={setActiveTab} />;
       case 'routine': return <RoutinePlanner />;
       case 'progress': return <ProgressTracker />;
+      case 'inventory': return <InventoryManager />;
       case 'knowledge': return <KnowledgeHub />;
       case 'ai-advisor': return <AIAdvisor />;
       default: return <Dashboard onNavigate={setActiveTab} />;

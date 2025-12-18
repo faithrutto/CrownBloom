@@ -35,3 +35,11 @@ export interface ChatMessage {
   text: string;
   isThinking?: boolean;
 }
+
+export interface Product {
+  id: string;
+  name: string;
+  brand: string;
+  category: 'Cleansing' | 'Conditioning' | 'Treatment' | 'Styling' | 'Tools';
+  rating: number;
+}
